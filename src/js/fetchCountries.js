@@ -35,13 +35,13 @@ export default function fetchCountries(name) {
             if (totalCountries >= 2 && totalCountries <= 10) {
                 renderCountryList(countries);
                 countryInfo.innerHTML = "";
-                return
+              return;
             }
-// One match found render html of country info and clear html from countrty search            
+// One match found render html of country info and clear html from country list search            
           if (totalCountries == 1) {
             renderCountryInfo(countries);
             countryList.innerHTML = "";
-            return
+            return;
           }
         })
     
